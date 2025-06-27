@@ -1,6 +1,6 @@
 /* 页脚与头图透明 */
 #footer {
-  background: transparent !important;
+  background: rgba(128, 128, 128, 0.3) !important;
 }
 #page-header {
   background: transparent !important;
@@ -24,7 +24,22 @@
 
 
 /* 翻页按钮居中 */
-#pagination {
+/* #pagination {
   width: 100%;
   margin: auto;
+} */
+
+
+/* 分类磁铁黑夜模式适配 */
+/* 一般状态 */
+[data-theme="dark"] .magnet_link_context {
+  background: #1e1e1e;
+  color: antiquewhite;
+  border-radius: 7px;
+}
+/* 鼠标悬浮状态 */
+[data-theme="dark"] .magnet_link_context:hover {
+  background: #3ecdf1;
+  color: #f2f2f2;
+  border-radius: 7px;
 }
